@@ -11,4 +11,15 @@ entries:
     urls:
     - https://github.com/camservo-org/helm-charts/releases/download/backend-0.1.1/backend-0.1.1.tgz
     version: 0.1.1
-generated: "2024-08-28T17:11:04.961203983Z"
+  default:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2024-08-28T20:23:26.270406374Z"
+    description: A Helm chart for Kubernetes
+    digest: 890ba8e29d096de357091c4652cf93236139e38e9aed4a82d2e2bf6d12fb7b2f
+    name: default
+    type: application
+    urls:
+    - https://github.com/camservo-org/helm-charts/releases/download/default-0.1.0/default-0.1.0.tgz
+    version: 0.1.0
+generated: "2024-08-28T20:23:26.270412916Z"
