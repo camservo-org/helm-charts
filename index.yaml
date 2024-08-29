@@ -24,6 +24,16 @@ entries:
   default-template:
   - apiVersion: v2
     appVersion: 1.16.0
+    created: "2024-08-29T16:21:37.134628432Z"
+    description: A Helm chart for Kubernetes
+    digest: 164fb1af0426f631c7d03690168d23a2cfc40cbfbb2b24464f42d8af1d901324
+    name: default-template
+    type: library
+    urls:
+    - https://github.com/camservo-org/helm-charts/releases/download/default-template-0.1.1/default-template-0.1.1.tgz
+    version: 0.1.1
+  - apiVersion: v2
+    appVersion: 1.16.0
     created: "2024-08-29T15:08:48.094433819Z"
     description: A Helm chart for Kubernetes
     digest: e99bf3a92123acc28930a97d1ecdb4cdf590e4c7b5a7db4273fe78feadd64475
@@ -32,4 +42,4 @@ entries:
     urls:
     - https://github.com/camservo-org/helm-charts/releases/download/default-template-0.1.0/default-template-0.1.0.tgz
     version: 0.1.0
-generated: "2024-08-29T15:08:48.094447295Z"
+generated: "2024-08-29T16:21:37.134644161Z"
