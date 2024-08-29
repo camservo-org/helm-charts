@@ -1,0 +1,15 @@
+{{- define "default-template.configmap.tpl" -}}
+apiVersion: apps/v1
+kind: Deployment
+spec:
+  template:
+    spec:
+      containers:
+        - name: {{ .Chart.Name }}
+          envFrom:
+          - configMapRef:
+              name: {{ .Release.Name | printf "%s-%s" .Chart.Name }}
+{{- end -}}
+{{- define "default-template.configmap" -}}
+{{- include "default-template.util.merge" (append . "default-template.configmap.tpl") -}}
+{{- end -}}
