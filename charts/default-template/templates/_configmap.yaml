@@ -1,0 +1,10 @@
+{{- define "default-template.configmap.tpl" -}}
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: {{ .Release.Name | printf "%s-%s" .Chart.Name }}
+data: {}
+{{- end -}}
+{{- define "default-template.configmap" -}}
+{{- include "default-template.util.merge" (append . "default-template.configmap.tpl") -}}
+{{- end -}}
