@@ -1,4 +1,4 @@
-{{- define "default-template.configmap.tpl" -}}
+{{- define "default-template.deployment.tpl" -}}
 apiVersion: apps/v1
 kind: Deployment
 spec:
@@ -10,6 +10,6 @@ spec:
           - configMapRef:
               name: {{ .Release.Name | printf "%s-%s" .Chart.Name }}
 {{- end -}}
-{{- define "default-template.configmap" -}}
-{{- include "default-template.util.merge" (append . "default-template.configmap.tpl") -}}
+{{- define "default-template.deployment" -}}
+{{- include "default-template.util.merge" (append . "default-template.deployment.tpl") -}}
 {{- end -}}
